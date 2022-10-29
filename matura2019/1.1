@@ -1,0 +1,31 @@
+Specyfikacja:
+Dane:
+n
+A[1..n]
+Wynik:
+w
+– liczba całkowita większa od 1
+– tablica zawierająca ciąg n liczb zapisanych przez dzieci (najpierw
+wszystkie liczby nieparzyste, a potem wszystkie liczby parzyste)
+– pierwsza od lewej parzysta liczba w tablicy A
+Przykład:
+Dane:
+n = 10
+A[1..n] = 5, 99, 3, 7, 111, 13, 4, 24, 4, 8
+Wynik:
+w =4
+
+algo
+
+p<-1
+k<-n-1
+
+dopuki p<=k wykonaj:
+    s<-(p+k)//2
+    jeśli A[s]%2==1 to:
+        p<-s+1
+    w przeciwnym wypadku:
+        jeśli A[s-1]%2==1 to:
+            zwróć s i zakończ algorytm
+        k<-s-1
+

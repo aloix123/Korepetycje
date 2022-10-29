@@ -1,0 +1,20 @@
+Specyfikacja:
+Dane:
+n
+– dodatnia liczba całkowita
+Czyjest [1..n] – tablica długości n obliczona w wyniku działania procedury
+Sitko(n)
+k
+– liczba całkowita, 1 ≤ k ≤ n
+Wynik:
+– prawda, gdy k jest liczbą kwadratową, fałsz w przeciwnym
+przypadku
+
+algorytm:
+i<-0
+Dla i<k-1 wykonaj
+    c<-0
+    Dla c<k-1 wykonaj
+        jeśli Czyjest[k]==Czyjest[i]+Czyjest[c]:
+            zwróć prawda i zakończ program
+zwróć fałsz i zakończ program

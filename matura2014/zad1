@@ -1,0 +1,28 @@
+a)
+b-black
+w-white
+
+3 b b
+4 b w w
+7 b b b
+8 b w w w
+15 b b b b
+16 b w w w w
+b)szczerze nie wiem ale zgaduej log2n +1
+c)
+Dane:
+liczba n naturalna
+
+p<-n
+
+i=0
+Dopuki i<liczby całkowitej z log2(n)+! wykonaj:
+    jeżeli p=1 to :
+        nawlecz czarny koralik na lewy koniec sznurka
+    jeżeli p%2=0 to :
+        p<-p/2
+        nawlecz biały koralik na lewy koniec sznurka
+    jeżeli p%=1 to:
+        p<-(p-1)/2
+        nawlecz czarny koralik na lewy koniec sznurka
+    i<-i+1

@@ -1,0 +1,49 @@
+
+a) 1 2 4 8 6 2 4 8 6 2 4 8 6 2 4 8
+
+b)
+Dane: Liczba całkowita k ≥ 0 .
+Wynik: Reszta z dzielenia 2 k przez 10.
+
+jeżeli k=0:
+    wypisz 1
+    zakończ program
+c<-k%4
+jeżeli c=0:
+    wypisz 6
+    zakończ program
+i<- 1
+f<- 2
+dopuki i<c wykonaj:
+    f<-f*2
+    i<-i+1
+wypisz f
+zakończ program
+
+
+
+c)
+
+Specyfikacja:
+Dane: Liczby całkowite a i n, gdzie n = 2 k dla pewnej liczby całkowitej k ≥ 0 .
+Wynik: Liczba a n .
+
+jeżeli k=0 to:
+    wypisz 1
+    zakończ progrram
+jeżeli k=1:
+    wypisz a
+    zakończ program
+p<- 1
+q<- 0
+
+dopuki q <- k wykonaj:
+    p<-p*2
+    q<-q+1
+dopuki p różne od 1 wykonaj:
+    a<-a*a
+    p<-p/2
+wypisz a
+
+
+

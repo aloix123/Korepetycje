@@ -1,0 +1,19 @@
+a)
+DOKOŃCZENIE TABELI
+   k   s(k)    czy
+   23   (2+3)5   TAK
+   -     -         NIE
+b)najwiękrzą liczbą cztero cyffrową jest 9999
+suma cyfr 9999 jest równa 36
+9 jest najwiękrzą cyfrą , zatem najwiękrza suma cyfr dla liczby czterocyfrowej będzie zawsze wtedy , gdy liczba składa się z samych 9
+karzda liczba mniejsza od 9999 ma mniejszą sumę cyfr
+liczba 9999 jest najwiękrzą liczbą czterocyfrową , składa się ona z samych 9 więc jej suma jest najwiękrza od reszty czterocyfrowych liczb
+zatem suma cyfr będzie zawsze mniejsza bądź równa 36
+morzemy zetam wywnioskiwać , żes(k)<=36
+
+c)
+Dane:
+ dla i=n-1,n-2 co 1 do 0:
+    x=(k div1000)+((k mod 1000)div100)+(k mod 100) div10)+(k mod 10)
+    jeżęli i+x jest równe n to :wypisz k i zakończ program
+ jeśli pętla się skończyła : wypisz "NIE"

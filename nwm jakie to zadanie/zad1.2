@@ -1,0 +1,16 @@
+Dane:
+    n – liczba całkowita większa od 1
+    A[1..n] – tablica zawierająca n różnych, dodatnich liczb całkowitych
+    p – liczba pierwsza
+Wynik:
+    S – największe pole powierzchni prostokąta, które nie jest podzielne przez p,
+     a długości sąsiednich boków tego prostokąta są różne i zawarte w tablicy A;
+     jeśli nie można zbudować takiego prostokąta, wynikiem powinno być 0 (zero)
+
+ Algorytm:
+ wynik<- -9999999999999
+ c<- 2
+ dla KARZDEGO i=A[1]...A[n] wykonaj:
+    dla KARZDEGO b=A[1]...A[n] wykonaj:
+        jeśli i-b nie jest równe 0 oraz (i*b)mod n nie jest równe 0 oraz i*b jest więkrze od wynik:
+            S<-i*b

@@ -1,0 +1,7 @@
+a)s-l+1
+s+1
+
+b)około O(log10(n))
+poniewarz jest to algorytm binarny i jego
+złorzoność jest w takim zakresie.l jest zwiękrzane o polowe połowy lub p jest
+ zmniejszane o połowę połowy

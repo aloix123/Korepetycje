@@ -1,0 +1,13 @@
+1 10
+2 7
+3 6
+b) najmmniejsza od i do n
+c) 2012-512+1
+d)
+Dane:
+Liczba naturalna n
+tablica a=[1..n]
+p<-n
+Dla g=n-1,n-2..co -1 do i wykonaj:
+    jeśli a[g]<a[p]:
+        p<- g

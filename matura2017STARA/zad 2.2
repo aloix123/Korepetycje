@@ -1,0 +1,16 @@
+prosta sprawa tutaj ten algorytm zamienia miejsca tablicy a na końcu to sumuje
+Specyfikacja:
+Dane: n – nieujemna liczba całkowita
+Wynik: w – liczba całkowita równa pn
+Algorytm:
+tab[0] ← 0
+tab[1] ← 1
+tab[2] ← 1
+tab[3] ← 2
+tab[4] ← 4
+i ← 5
+dopóki i ≤ n wykonuj
+    temp ← tab[0]+tab[1]+tab[2]+tab[3]+tab[4]
+    tab[ i mod 5] ← temp
+    i ← i+1
+w ← tab[0]+tab[1]+tab[2]+tab[3]+tab[4]

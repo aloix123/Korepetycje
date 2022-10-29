@@ -1,0 +1,39 @@
+Dane:
+n
+– liczba całkowita dodatnia
+X[1..n] – tablica liczb całkowitych
+Y[1..n] – tablica liczb całkowitych dodatnich
+Para (X[i], Y[i]) to współrzędne jednego szczytu, i = 1, 2, …, n.
+Żadne dwa szczyty nie leżą w jednej linii z obserwatorem.
+Wynik:
+X[1..n], Y[1..n] – tablice zawierające współrzędne danych szczytów, uporządkowanych
+w kolejności, w której obserwator widzi je od lewej do prawej strony.
+
+
+to mi miażdży umysł nie wiem jak to zrobić będąc w
+stanie tylko przypisywać do zmiennych
+
+T<-[]
+i<-1
+G<-[]
+dopuki i<n+1 wykonuj
+    G[i]<-X[i]/Y[i]
+c<-1
+dopuki c<n wykonaj:
+    x<-2
+    dopuki x<n+1 wykonaj:
+        jeżeli G[c]>G[x]:
+            i<-G[c]
+            G[c]<-G[x]
+            G[x]<-i
+
+            ix<-X[c]
+            X[c]<-X[x]
+            X[x]<-ix
+
+            iy<-Y[c]
+            Y[c]<-Y[x]
+            Y[x]<-iy
+        x<-x+1
+    c<-c+1
+

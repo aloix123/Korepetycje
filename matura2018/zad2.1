@@ -1,0 +1,22 @@
+Dane:
+n
+– liczba całkowita dodatnia
+X[1..n] – tablica liczb całkowitych
+Y[1..n] – tablica liczb całkowitych dodatnich
+Para (X[i], Y[i]) to współrzędne jednego szczytu, i = 1, 2, …, n.
+Żadne dwa szczyty nie leżą w jednej linii z obserwatorem.
+Wynik:
+x, y – współrzędne skrajnie lewego szczytu spośród tych opisanych w tablicach X i Y.
+algorytm
+p<- 999999999999999999999999999999999999999
+x<-0
+y<-0
+i<- 1
+Dopuki i<n+1 wykonaj:
+    q<-X[i]/Y[i]
+    jeśli q<p to:
+        p<- q
+        x<- X[i]
+        y<- Y[i]
+    i<-i+1
+
