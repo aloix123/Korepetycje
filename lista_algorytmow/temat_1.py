@@ -22,7 +22,8 @@ def suma_cyfr(n):
 
         result+=n%10
         n = n // 10
-        print(n)
+
+
     return result
 
 
@@ -55,18 +56,12 @@ assert liczba_cyfr(12) == 2
 assert liczba_cyfr(123) == 3
 assert liczba_cyfr(1222) == 4
 
-
 # Zad 3
 # Input: Nieujemna liczba całkowita n
 # Output: Liczba różnych cyfr wystepujacych w zapisie liczby n.
 
 def liczba_roznych_cyfr(n):
-    numebers=[]
-    numbercount=liczba_cyfr(n)
-    while numbercount!=0:
-        numebers.append(n//10**(numbercount-1))
-        n-=10**(numbercount-1)
-        numbercount-=1
+    pass
     #sortowanie
 
 assert liczba_roznych_cyfr(111111) == 1
@@ -82,7 +77,21 @@ assert liczba_roznych_cyfr(7) == 1
 # Output: True jesli ciag cyfr liczby n jest scisle rosnacy i False w.p.p.
 
 def czy_cyfry_stanowia_ciag_rosnacy(n):
-    pass
+    index = -9999999999999999999999999999999999999999
+    lengh = liczba_cyfr(n)
+    x = liczba_cyfr(n) - 1
+    for i in range(lengh):
+        cyfra = n // 10 ** (x)
+        print(cyfra)
+        n = n - 10 ** (x) * cyfra
+        print(n)
+        if index < cyfra:
+            index = cyfra
+        else:
+            return False
+        x -= 1
+    return True
+
 
 
 assert czy_cyfry_stanowia_ciag_rosnacy(7) == True
@@ -99,7 +108,11 @@ assert czy_cyfry_stanowia_ciag_rosnacy(1223) == False
 # Input: Nieujemna liczba całkowita n
 # Output: n! (silnia z n)
 def silnia(n):
-    pass
+    if n<=1:
+        return 1
+    return silnia(n-1)*n
+
+
 
 
 assert silnia(0) == 1
