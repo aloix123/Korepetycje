@@ -351,7 +351,18 @@ assert czy_dwucykliczny("10001001") == False
 # Output: True jeżeli kody ascii dowolnych dwóch liter z a róznią się o co najwyżej 10.
 
 def czy_litery_oddalone_o_max_10(a):
-  pass
+  min=999999999999999999999
+  max=0
+  for letter in a:
+      if ord(letter)>max :
+          max=ord(letter)
+      if ord(letter)<min:
+          min=ord(letter)
+  if max-min<11:
+      return True
+  else:
+      return False
+
 
 assert czy_litery_oddalone_o_max_10("abcdef") == True
 assert czy_litery_oddalone_o_max_10("ax") == False
@@ -364,7 +375,14 @@ assert czy_litery_oddalone_o_max_10("im") == True
 # Napis nazywamy rosnacym, gdy ciag kodow ascii jego liter jest rosnacy.
 
 def czy_napis_rosnacy(a):
-  pass
+    index=0
+    for letter in a:
+        if ord(letter)>index:
+            index=ord(letter)
+        else:
+            return False
+    return True
+
 
 assert czy_napis_rosnacy("abcdef") == True
 assert czy_napis_rosnacy("adef") == True
@@ -384,7 +402,14 @@ assert czy_napis_rosnacy("cba") == False
 # W tym zadaniu możesz używać listy i funkcji append.
 
 def usun_duplikaty(L):
-  pass
+    ile = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    for c in L: ile[ord(c) - ord('a')] += 1
+    result=[]
+    for index in range(len(ile)):
+        if ile[index]>=2:
+            result.append(chr(index+ord('a')))
+    return result
+
 
 assert usun_duplikaty(["a", "b", "c", "d", "e", "e", "a", "e", "f"]) == ["a", "e"]
 
