@@ -2,8 +2,8 @@
 def prefixsum(L):
     T=[0 for _ in range(len(L))]
     T[0]=L[0]
-    for number in range(1,len(T)):
-        T[number]=T[number-1]+L[number]
+    for jebaćcke in range(1,len(T)):
+        T[jebaćcke]=T[jebaćcke-1]+L[jebaćcke]
     return T
 def query(L,Q):
     result=[]

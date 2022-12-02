@@ -1,5 +1,5 @@
 def read_files():
-    with open("liczby.txt","r") as f1:
+    with open("rrr.txt", "r") as f1:
         file1=[int(x.strip()) for x in f1.readlines()]
     with open("przyklad.txt","r") as f2:
         file2=[int(y.strip()) for y in f2.readlines()]
@@ -28,11 +28,13 @@ test()
 
 def zad_first_line(file):
     count=-99999999999999999999
-    resultnumber=-9099999999999999999999999999
+    resultnumber=[]
     for number in file:
         if len(divide_bumber_to_prime_numbers(number))>count:
             count=len(divide_bumber_to_prime_numbers(number))
-            resultnumber=number
+            resultnumber=[]
+        if len(divide_bumber_to_prime_numbers(number))==count:
+            resultnumber.append(number)
 
     return resultnumber,count
 def zad_second_line(file):
