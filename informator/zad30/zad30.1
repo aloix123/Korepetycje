@@ -1,0 +1,7 @@
+funkcja szyfruj(zn,k):
+    x<-kod(nz)+k
+    x<-x mod 26
+    y<- kod(zn)+x
+    jeżeli v>90 to:
+        y<-y-25
+    zwróć znak(y)
