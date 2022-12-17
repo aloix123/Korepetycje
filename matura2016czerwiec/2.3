@@ -1,0 +1,24 @@
+Dane:
+    liczba całkowita dodatnia n
+    tablica liczb całkowitych dodatnich A[1], A[2],...,A[n]
+Wynik:
+    największa liczba (wg porządku obowiązującego na planecie X) spośród liczb
+w tablicy A
+
+P<-[]
+pindex=1
+NIEP<-[]
+niepindex<-1
+dla i=1,2,3..n wykonaj:
+    jeżeli A[i]%2==0:
+        P[pindex]<-A[i]
+        pindex<-pindex+1
+    w przeciwnym wypadku:
+        NIEP[niepindnex]<-A[i]
+        niepindex<-niepindex+1
+resultx<-9999999999999999999999999999999999
+dla karzdej liczby p w liście P:
+    jeżeli p<reslutx:
+        reslutx<-p
+zwrąć resultx i zakończ program
+

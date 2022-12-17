@@ -1,0 +1,2 @@
+wiersz 999
+liczba 1
