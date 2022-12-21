@@ -1,0 +1,16 @@
+Dane: dodatnia liczba całkowita n oraz tablica a[1..n] zawierająca n-elementowy ciąg
+    liczb całkowitych a[1], …, a[n]
+Wynik: liczba całkowita najw_liczba_progów – największa liczbę progów w schodach do
+    dołu z ciągu zapisanego w tablicy a
+liczba_progów<-0
+najw_liczba_progów<-0
+dla i=1,2,3...n-1:
+    jeżeli a[i]>=a[i+1] to:
+        jeżeli a[i]>a[i+1] to:
+            liczba_progów<-liczbaprogów+1
+    w przeciwnym wypadku:
+        jeżeli liczba_progów>najw_liczba_progów:
+            najw_liczba_progów<-liczba_progów
+        liczbaprogów<-0
+zwróć najw_liczba_progów i zakończ program
+

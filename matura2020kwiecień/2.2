@@ -1,0 +1,19 @@
+Dane:
+    n – dodatnia liczba całkowita większa niż 2
+    T[1..n] – tablica n liczb całkowitych, w której występuje dokładnie jedna moda
+Wynik:
+    m – moda zestawu liczb zapisanego w tablicy T
+i<-1
+maxmoda<-1
+m<-0
+dopuki i<n wykonaj:
+    h<-0
+    dla f=i+1,i+2...n wykonaj:
+        jeżeli T[i]=T[f] to:
+            h<-h+1
+
+        jeżeli h>maxmoda to
+            maxmoda<-h
+            m<-T[i]
+    i<-i+1
+zwróć m i zakończ algorytm

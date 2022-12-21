@@ -1,0 +1,10 @@
+Dane: dodatnia liczba całkowita n oraz tablica a[1..n] zawierająca n-elementowy ciąg
+    liczb całkowitych a[1], …, a[n]
+    Wynik: liczba całkowita liczba_progów – liczba wszystkich progów w ciągu zapisanym
+     w tablicy a
+liczba_progów<-0
+dla i=1,2,3...n-1:
+    jeżeli a[i]>a[i+1] to:
+    liczba_progów<-liczbaprogów+1
+zwróć liczba_progów i zakończ program
+

@@ -1,0 +1,5 @@
+2(n) poniewarz zakładam że pesymistycznie wszystkie moje liczby są jednym wielkimm schodem do dołu
+takim jak 9,8,7,6,5,4,3,2,1
+wtedy "jeżeli a[i]>=a[i+1] to:
+            jeżeli a[i]>a[i+1] to:"
+wykona się dwa razy
