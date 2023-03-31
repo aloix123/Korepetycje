@@ -1,0 +1,16 @@
+Dane:
+    n – dodatnia liczba całkowita
+    A[1..n] – tablica n dodatnich liczb całkowitych, gdzie A[i] jest i-tym elementem ciągu
+Wynik:
+    k – minimalna liczba elementów, które trzeba podmienić w ciągu
+    zapisanym w tablicy A, aby otrzymać n-permutację
+dla i=1,2,3....n:
+    T[i]<-0
+k<-0
+dla i=1,2,3....n:
+   jeżeli A[i]>n:
+        k<-k+1
+   w przeciwnym wypadku:
+        T[A[i]]<-T[A[i]]+1
+dla i=1,2,3....n:
+    k<-k+T[i]-1

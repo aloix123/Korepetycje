@@ -17,7 +17,7 @@ def zad41(numlist):
     for num in numlist:
         if str(num)[0]==str(num)[-1]:
             numberscount+=1
-    #wiem że da siuę to zrobi ć lepiej ale jestem leniwy
+
 
     return (firstnunm,numberscount)
 print(zad41(numbers))
